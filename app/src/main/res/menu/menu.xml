@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/timeline"
+        android:icon="@drawable/timeline"
+        android:title="Timeline" />
+
+    <item
+        android:id="@+id/chat"
+        android:title="chat"
+        android:icon="@drawable/chat"/>
+
+    <item
+        android:id="@+id/newPost"
+        android:icon="@drawable/newpost"
+        android:title="New Post" />
+
+
+    <item
+        android:id="@+id/switch_notifications"
+        android:title="notifications" />
+
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile" />
+
+
+</menu>

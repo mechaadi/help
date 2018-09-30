@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Use DrawerLayout as root container for activity -->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#455b84">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <android.support.v4.view.ViewPager
+                android:layout_below="@id/tabs"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="55dp" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:gravity="bottom|end"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/fab_new_post"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            app:backgroundTint="@android:color/holo_green_dark" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_new_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+
+            app:backgroundTint="#72a1ef" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        android:elevation="20dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:menu="@menu/menuu"
+         >
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <!--  <android.support.design.widget.NavigationView
+          android:id="@+id/nav_view"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+
+          android:background="#474d4d"
+          android:fitsSystemWindows="true"
+
+          app:insetForeground="@android:color/background_light"
+          app:itemTextColor="@android:color/white"
+          app:menu="@menu/drawer_view" />
+  -->
+
+</android.support.design.widget.CoordinatorLayout>

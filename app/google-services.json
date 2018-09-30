@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "537030469384",
+    "firebase_url": "https://hackbvp-a7a.firebaseio.com",
+    "project_id": "hackbvp-a7a",
+    "storage_bucket": "hackbvp-a7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537030469384:android:e46d497795a4fefc",
+        "android_client_info": {
+          "package_name": "com.firebaseapp.a7aweb.hackbvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537030469384-3ust4bspviekmuk7alrkortg9vrqphlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebaseapp.a7aweb.hackbvp",
+            "certificate_hash": "15e8968d1b41fdc701f89a62c9072748104ddeb3"
+          }
+        },
+        {
+          "client_id": "537030469384-g0un9ule70gmqviqmo8ijuoju765ishb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgbw7rvU8Hn9mmZUNuWZZNqP42PrKDN6k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537030469384-g0un9ule70gmqviqmo8ijuoju765ishb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
